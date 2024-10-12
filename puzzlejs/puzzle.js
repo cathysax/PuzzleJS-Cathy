@@ -1386,7 +1386,7 @@ function PuzzleEntry(p, index) {
         this.commands.querySelector(".puzzle-undo-button").addEventListener("click", e => { this.undoManager.undo(); });
         this.commands.querySelector(".puzzle-redo-button").addEventListener("click", e => { this.undoManager.redo(); });
         // TODO shouldn't need a reload after reset
-		this.commands.querySelector(".puzzle-reset-button").addEventListener("click", e => { var prompt = this.options["data-reset-prompt"]; if (!prompt || confirm(prompt)) { this.prepareToReset(); window.location.reload(); } });
+        this.commands.querySelector(".puzzle-reset-button").addEventListener("click", e => { var prompt = this.options["data-reset-prompt"]; if (!prompt || confirm(prompt)) { this.prepareToReset(); window.location.reload(); } });
         this.container.appendChild(this.commands);
     }
 
